@@ -33,3 +33,10 @@ Route::get('/akurasi', [AkurasiController::class, 'index'])->name('akurasi');
 
 // Input
 Route::post('/upload', [InputController::class, 'upload'])->name('upload');
+
+// Split
+Route::post('/spliting', [SplitController::class, 'split'])->name('spliting');
+
+// Prediksi
+Route::post('/proses-prediksi', [PrediksiController::class, 'process'])->name('proses-prediksi');
+Route::post('/predict', [PrediksiController::class, 'predict'])->name('predict');
